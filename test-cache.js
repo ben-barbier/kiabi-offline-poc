@@ -79,3 +79,9 @@ function putInCache(body) {
     })
     .catch((e) => console.error(e))
 }
+
+const storeFoo = localforage.createInstance({ name: 'foo' })
+const storeBar = localforage.createInstance({ name: 'bar' })
+
+storeFoo.setItem('foo', { foo: 42 })
+storeBar.setItem('bar', { foo: 42 })

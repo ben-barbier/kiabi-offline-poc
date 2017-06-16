@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "localforage": "^1.5.0"
+    "localforage": "^1.5.0",
+    "pica": "^3.0.4"
   }
 }

@@ -19,7 +19,6 @@
     "http-server": "^0.10.0"
   },
   "dependencies": {
-    "localforage": "^1.5.0",
-    "pica": "^3.0.4"
+    "localforage": "^1.5.0"
   }
 }

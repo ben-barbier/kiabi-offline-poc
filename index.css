@@ -1,0 +1,17 @@
+#images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#images img {
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    padding: 5px;
+    margin: 0 1em 1em 0;
+}
+
+.image-upload img {
+    cursor: pointer;
+}

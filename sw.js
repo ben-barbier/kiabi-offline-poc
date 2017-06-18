@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 onfetch = function (event) {
 
@@ -7,12 +7,12 @@ onfetch = function (event) {
 
             // Cache hit - return response
             if (response) {
-                console.log('CACHE', event.request.url)
+                console.log('CACHE', event.request.url);
                 return response
             }
 
-            console.log('NETWORK', event.request.url)
+            console.log('NETWORK', event.request.url);
             return fetch(event.request)
         })
         .catch((e) => console.error(e)))
-}
+};

@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title></title>
-  <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <title>sw-offline-image-resizer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
 
-<h1>Test cache</h1>
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">
+                SW Offline Image Resizer
+            </h1>
+        </div>
+    </div>
+</section>
 
-<a href="test-cache.html">TEST CACHE</a>
-
-<div id="allImages">
-
+<div class="section">
+    <div class="container">
+        <div class="notification is-warning">
+            <strong>To use this library, we need to :</strong>
+            <ul style="list-style: square inside;">
+                <li>use browser compatible with service worker (<a href="http://caniuse.com/#feat=serviceworkers">caniuse.com</a>)</li>
+                <li>do not use iPhone or iPad</li>
+                <li>use https connection</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
-<div>
-  <input id="imageInput" type="file" accept="image/*">
+<div class="section">
+    <div class="container">
+        <div class="notification">
+            <span class="image-upload">
+                <label for="image-input">
+                    <img src="ic_add_a_photo_black_24dp_2x.png"/>
+                </label>
+                <input id="image-input" type="file" accept="image/*" style="display: none;"/>
+            </span>
+            <span id="images"></span>
+        </div>
+    </div>
 </div>
 
 <script src="./index.js"></script>

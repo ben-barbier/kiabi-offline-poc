@@ -2,9 +2,10 @@
   "name": "sw-offline-image-resizer",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ben-barbier/sw-offline-image-resizer.git"
@@ -14,6 +15,9 @@
     "url": "https://github.com/ben-barbier/sw-offline-image-resizer/issues"
   },
   "homepage": "https://github.com/ben-barbier/sw-offline-image-resizer#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
   "dependencies": {
     "localforage": "^1.5.0",
     "pica": "^3.0.4"

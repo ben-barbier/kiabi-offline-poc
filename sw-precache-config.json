@@ -1,0 +1,11 @@
+{
+    "staticFileGlobs": [
+        "index.html",
+        "index.js",
+        "index.css",
+        "node_modules/bulma/css/bulma.css",
+        "ic_add_a_photo_black_24dp_2x.png"
+    ],
+    "importScripts": [
+    ]
+}

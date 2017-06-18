@@ -3,7 +3,9 @@
 const maxWidth = 256;
 const maxHeight = 256;
 
-navigator.serviceWorker && navigator.serviceWorker.register('sw.js').then(() => {
+navigator.serviceWorker && navigator.serviceWorker.register('service-worker.js').then(() => {
+    return navigator.serviceWorker.register('sw.js');
+}).then(() => {
     displayCachedImages();
 });
 
